@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 3.5)
+message ("running cmake")
+project (SUMC1)
+add_executable (SUMC1 SUMC1.c)
+target_link_libraries (SUMC1 gmp m)
+target_compile_options (SUMC1 PUBLIC "-O3")
